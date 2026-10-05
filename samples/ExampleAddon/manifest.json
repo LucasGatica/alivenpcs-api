@@ -1,0 +1,13 @@
+{
+  "Name": "AliveNpcs Example Addon",
+  "Author": "Your Name",
+  "Version": "1.0.0",
+  "Description": "Shows the AliveNpcs API in use: a computer app with an AI radio bulletin, gossip and a console command.",
+  "UniqueID": "YourName.AliveNpcsExampleAddon",
+  "EntryDll": "ExampleAddon.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    { "UniqueID": "Lucas.AliveNpcs", "MinimumVersion": "1.7.0", "IsRequired": false }
+  ],
+  "UpdateKeys": []
+}

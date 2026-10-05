@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>ExampleAddon</AssemblyName>
+    <RootNamespace>ExampleAddon</RootNamespace>
+    <Version>1.0.0</Version>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- This sample links the interfaces from the repo's api/ folder so it always builds against them.
+         In your own mod, copy the files into your project instead. -->
+    <Compile Include="../../api/*.cs" Link="AliveNpcsIntegration/%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="i18n/**/*" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
