@@ -86,4 +86,6 @@ Both files in `api/` are checked against the AliveNpcs 1.7.0 build with the same
 
 This repository is under the [MIT license](LICENSE). Anyone can make an addon for AliveNpcs with it and publish that addon: copy the interfaces and the sample code into your mod, change them as you like, and release your addon wherever and under whatever license you want.
 
+If you publish an addon, I'd love to hear about it! Let me know on the [AliveNpcs Nexus page](https://www.nexusmods.com/stardewvalley/mods/43475) or by opening an issue here. It's a request, not a condition of the license.
+
 The license covers this repository only. AliveNpcs itself isn't part of it: your addon uses AliveNpcs as a dependency, so don't include AliveNpcs' files in your download.
